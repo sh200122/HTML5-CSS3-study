@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>微金所导航</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        .big{
+            margin: 50px auto;
+            height: 42px;
+            border-top: 1px #666 solid;
+            border-bottom: 1px #666 solid;
+        }
+        .big .small ul{
+            display: flex;
+            justify-content: center;
+        }
+        .big .small ul li{
+            width: 240px;
+            height: 41px;
+            border-left: 1px #666 solid;
+            text-align: center;
+        }
+        .big .small ul li:nth-child(1){
+            border-left: 0px;
+        }
+        .big .small ul li a{
+            font-size: 14px;
+            line-height: 42px;
+        }
+    </style>
+</head>
+<body>
+    <div class="big">
+        <div class="small">
+            <ul>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

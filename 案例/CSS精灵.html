@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS精灵</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        li{
+            list-style: none;
+        }
+        .outer{
+            margin: 100px auto;
+            width: 1190px;
+            height: 42px;
+        }
+        .outer ul{
+            display: flex;
+        }
+        .outer li{
+            display: flex;
+            padding-left: 40px;
+            width: 297px;
+            height: 42px;
+        }
+        .outer li h5{
+            margin-right: 10px;
+            width: 36px;
+            height: 42px;
+            background: url(../案例/效果图/sprite.png) 0 -192px;
+        }
+        .outer li p{
+            font-size: 18px;
+            line-height: 42px;
+            font-weight: bold;
+        }
+        .outer li:nth-child(2) h5{
+            background: url(../案例/效果图/sprite.png) -41px -192px;
+        }
+        .outer li:nth-child(3) h5{
+            background: url(../案例/效果图/sprite.png) -82px -192px;
+        }
+        .outer li:nth-child(4) h5{
+            background: url(../案例/效果图/sprite.png) -123px -192px;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <ul>
+            <li>
+                <h5></h5>
+                <p>品类齐全，轻松购物</p>
+            </li>
+            <li>
+                <h5></h5>
+                <p>多仓直发，极速配送</p>
+            </li>
+            <li>
+                <h5></h5>
+                <p>正品行货，精致服务</p>
+            </li>
+            <li>
+                <h5></h5>
+                <p>天天低价，畅选无忧</p>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 140px;
+            height: 140px;
+            /* border: 1px solid #000; */
+            background-image: url(./ZImages/bg.png);
+            animation: 
+                run 1s infinite steps(12),
+                move 3s forwards
+            ;
+        }
+        /* 当动画开始的状态和盒子默认样式相同，可以省略不写 */
+        @keyframes run{
+            /* 0%{
+                background-position: 0 0;
+            } */
+            100%{
+                background-position: -1680px 0;
+            }
+        }
+        @keyframes move {
+            /* from{
+                transform: translate(0);
+            } */
+            to{
+                transform: translate(1000px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

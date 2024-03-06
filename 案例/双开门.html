@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>双开门</title>
+    <style>
+        .father{
+            display: flex;
+            overflow: hidden;
+            margin: 0 auto;
+            width: 1366px;
+            height: 600px;
+            background-image: url(./images/skmbig.jpg);
+        }
+        .father .left,
+        .father .right{
+            width: 50%;
+            background-image: url(./images/skmsmall.jpg);
+            transition: all 0.5s;
+        }
+        .father .right{
+            background-position: right 0;
+        }
+        /* 鼠标悬停效果 */
+        .father:hover .left{
+            transform: translate(-100%);
+        }
+        .father:hover .right{
+            transform: translate(100%);
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+</body>
+</html>
